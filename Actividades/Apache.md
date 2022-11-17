@@ -74,3 +74,20 @@ Si sale esta imagen Apache ya funciona correctamente:
 
 ## Configurar hosts virtuales
 
+Después de configurar nuestro sitio web, debemos activar el archivo de configuración de hosts virtuales para habilitarlo. Lo hacemos ejecutando el siguiente comando en el directorio del archivo de configuración:
+
+> sudo a2ensite gci.conf
+
+
+Deberías ver el siguiente resultado:
+
+> Enabling site gci.
+   To activate the new configuration, you need to run:
+  service apache2 reload
+root@ubuntu-server:/etc/apache2/sites-available#
+
+Reiniciamos apache: 
+
+> service apache2 reload
+
+Y deberia estar listo, escribimos nuestro nombre de host en el navegador y fin.
